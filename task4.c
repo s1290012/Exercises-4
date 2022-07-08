@@ -5,9 +5,15 @@
 //Head or Tail game
 
 int main(){
+ 
   srand(time(NULL));
   int i,hc=0,tc=0,r;
+  char name[10];
   char H[] = "Heads", T[] = "Tails";
+
+  printf("Who are you?\n> ");
+  scanf("%s",name);
+  printf("Hello, %s!",name);
   printf("Tossing a coin. . .\n");
 
   for(i = 1; i <= 3; i++){
